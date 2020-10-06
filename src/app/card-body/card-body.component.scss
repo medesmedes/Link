@@ -1,0 +1,44 @@
+.mat-card-image{
+    margin: 0;
+    width:100%;
+    height:30vh;
+    object-fit:cover  ;
+    object-position: 50% 50%; /* default value: image is centered*/
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e1e8ed;
+    background-color: rgba( 166, 166, 166, 0.5);
+}
+
+.youtube{
+    margin: 0;
+    width:100%;
+    height:30vh;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e1e8ed;
+}
+
+.text-container{
+    width:100%;
+    height:30vh;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #e1e8ed;   
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+:host::ng-deep .microlink_card {
+    height: 30vh;
+  }
+
+.text-content{
+    padding: 14px;
+    margin: 0;
+}
+
+.mat-card-content{
+    margin-bottom: 0px;
+}   

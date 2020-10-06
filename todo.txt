@@ -1,0 +1,15 @@
+finish nav bar
+- change color theme?
+
+make about page
+look into angular routing
+	
+
+make chrome interface?
+- login
+- send link
+- comment
+- log off
+
+fix firebase rules
+

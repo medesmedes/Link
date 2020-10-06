@@ -1,0 +1,16 @@
+<mat-card-actions>	
+        <button mat-button *ngIf="link.payload.val().favorite == true" (click)="favorite(link.key, link.payload.val().favorite)">
+        <fa-icon class="fa-action-button" [icon]="solidHeart"></fa-icon>
+    </button>
+    <button mat-button *ngIf="link.payload.val().favorite == false" (click)="favorite(link.key, link.payload.val().favorite)">
+        <fa-icon class="fa-action-button" [icon]="regularHeart"></fa-icon>
+    </button>
+
+    <button mat-button *ngIf="link.payload.val().comment === ''" (click)="openComment(link.key, link.payload.val().comment)">
+        <fa-icon class="fa-action-button" [icon]="regularComment"></fa-icon>
+    </button>
+
+    <button mat-button *ngIf="link.payload.val().comment.length > 0" (click)="openComment(link.key, link.payload.val().comment)">
+        <fa-icon class="fa-action-button" [icon]="solidComment"></fa-icon>
+    </button>    
+</mat-card-actions>

@@ -1,0 +1,17 @@
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 54px;
+  grid-auto-rows: auto;
+  grid-row-gap: 32px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-right: 10vw;
+  margin-left: 10vw;
+  }
+
+.mat-card{
+  width: 16vw;
+  min-width: 297px;
+  padding-bottom: 0px;
+}

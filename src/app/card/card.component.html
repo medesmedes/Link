@@ -1,0 +1,7 @@
+<div class="card-container">
+    <mat-card *ngFor="let link of links; trackBy: trackBySource">
+        <app-card-header [link]="link" [dbRef]="dbRef"></app-card-header>
+        <app-card-body [link]="link"></app-card-body>
+        <app-card-footer [link]="link" [dbRef]="dbRef"></app-card-footer>
+    </mat-card>
+</div>

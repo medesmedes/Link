@@ -1,0 +1,23 @@
+<div id="{{link.key}}">
+
+    <mat-card-content *ngIf="link.payload.val().type == 'text'">
+        <div class="text-container">
+            <p class="text-content">{{link.payload.val().link}}</p>
+        </div>
+    </mat-card-content>
+
+    <mat-card-content *ngIf="link.payload.val().type == 'link'">
+        <microlink url="{{link.payload.val().link}}" [options]="{ size: 'large' }"></microlink>
+    </mat-card-content>
+
+    <mat-card-content *ngIf="link.payload.val().type == 'video'">
+        <iframe class="youtube" [src]="YouTubeGetID(link.payload.val().link) | safeUrl" frameborder="0"></iframe>
+    </mat-card-content>
+
+    <mat-card-content *ngIf="link.payload.val().type == 'image'">
+        <a href="{{link.payload.val().link}}" target="_blank">
+            <img mat-card-image src="{{link.payload.val().link}}" />
+        </a>
+    </mat-card-content>
+
+</div>

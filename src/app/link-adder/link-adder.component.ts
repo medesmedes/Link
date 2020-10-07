@@ -9,7 +9,7 @@ import { CommentDialogComponent } from "src/app/comment-dialog/comment-dialog.co
 @Component({
   selector: "link-adder",
   templateUrl: "./link-adder.component.html",
-  styleUrls: ["./link-adder.component.sass"]
+  styleUrls: ["./link-adder.component.scss"]
 })
 export class LinkAdderComponent implements AfterViewInit {
   duration = 1500;

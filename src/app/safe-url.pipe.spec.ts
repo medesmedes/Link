@@ -2,7 +2,8 @@ import { SafeUrlPipe } from './safe-url.pipe';
 
 describe('SafeUrlPipe', () => {
   it('create an instance', () => {
-    const pipe = new SafeUrlPipe();
+    // @ts-ignore
+    let pipe = new SafeUrlPipe();
     expect(pipe).toBeTruthy();
   });
 });

@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import {CardContainerComponent} from './card-container/card-container.component'
-import {AboutContainerComponent} from './about-container/about-container.component'
+import {CardPageComponent} from './card-page/card-page.component'
+import {AboutPageComponent} from './about-page/about-page.component'
 
 
 const routes: Routes = [
   {
-    path:'home',
-    component:CardContainerComponent
+    path:'my-links',
+    component:CardPageComponent
   },
   {
     path:'about',
-    component:AboutContainerComponent
+    component:AboutPageComponent
   },
-  { path: '',   redirectTo: 'home', pathMatch: 'full' }, // redirect to `first-component`
+  { path: '',   redirectTo: 'my-links', pathMatch: 'full' }, // redirect to `first-component`
 ];
 
 @NgModule({

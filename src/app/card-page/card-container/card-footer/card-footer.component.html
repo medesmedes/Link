@@ -1,0 +1,17 @@
+<mat-card-actions>
+  <button mat-button *ngIf="link.payload.val().favorite == true" (click)="favorite(link.key, link.payload.val().favorite)">
+    <fa-icon class="fa-action-button" [icon]="['fas', 'heart']"></fa-icon>
+  </button>
+  <button mat-button *ngIf="link.payload.val().favorite == false" (click)="favorite(link.key, link.payload.val().favorite)">
+    <fa-icon class="fa-action-button" [icon]="['far', 'heart']"></fa-icon>
+  </button>
+
+  <button mat-button *ngIf="link.payload.val().comment.length > 0" (click)="openComment(link.key, link.payload.val().comment)">
+    <fa-icon class="fa-action-button" [icon]="['fas', 'comment-alt']"></fa-icon>
+  </button>
+
+  <button mat-button *ngIf="link.payload.val().comment === ''" (click)="openComment(link.key, link.payload.val().comment)">
+    <fa-icon class="fa-action-button" [icon]="['far', 'comment-alt']"></fa-icon>
+  </button>
+
+</mat-card-actions>

@@ -7,5 +7,6 @@ import { AngularFireDatabase } from "@angular/fire/database";
   styleUrls: ["./app.component.scss"]
 })
 export class AppComponent {
+  title: Function;
   
 }

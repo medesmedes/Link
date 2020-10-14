@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-card-header",
@@ -9,11 +8,10 @@ import { faTimes } from "@fortawesome/free-solid-svg-icons";
 export class CardHeaderComponent implements OnInit {
   @Input() link: any;
   @Input() dbRef: any;
-  cross = faTimes;
   constructor() {}
 
   ngOnInit(): void {
-    
+
   }
 
 

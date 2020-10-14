@@ -3,16 +3,15 @@ import { AngularFireDatabase } from "@angular/fire/database";
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: "app-card",
-  templateUrl: "./card.component.html",
-  styleUrls: ["./card.component.scss"]
+  selector: "app-card-container",
+  templateUrl: "./card-container.component.html",
+  styleUrls: ["./card-container.component.scss"]
 })
-export class CardComponent implements OnInit {
+export class CardContainerComponent implements OnInit {
   links: any[];
   dbRef: any;
   prodPath: string = "users/Re047I84rQfCzxRjeRWZ7PMs2wL2/links";
   demoPath: string = "users/demobruger/links";
-  master = "Master";
   constructor(db: AngularFireDatabase) {
     if (environment.isDemo) {
       this.dbRef = db.list(this.demoPath);

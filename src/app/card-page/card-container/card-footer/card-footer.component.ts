@@ -1,9 +1,4 @@
 import { Component, OnInit, Input } from "@angular/core";
-import { faCommentAlt, faHeart } from "@fortawesome/free-solid-svg-icons";
-import {
-  faCommentAlt as faOutlineCommentAlt,
-  faHeart as faOutlineHeart
-} from "@fortawesome/free-regular-svg-icons";
 import { MatDialog, MatSnackBar } from "@angular/material";
 import { CommentDialogComponent } from "src/app/comment-dialog/comment-dialog.component";
 
@@ -15,10 +10,6 @@ import { CommentDialogComponent } from "src/app/comment-dialog/comment-dialog.co
 export class CardFooterComponent implements OnInit {
   @Input() link: any;
   @Input() dbRef: any;
-  solidComment = faCommentAlt;
-  regularComment = faOutlineCommentAlt;
-  solidHeart = faHeart;
-  regularHeart = faOutlineHeart;
   duration = 1500;
   constructor(private dialog: MatDialog, private _snackBar: MatSnackBar) {}
 

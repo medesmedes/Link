@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LinkAdderComponent } from './link-adder.component';
+import { CardPageComponent } from './card-page.component';
 
-describe('LinkAdderComponent', () => {
-  let component: LinkAdderComponent;
-  let fixture: ComponentFixture<LinkAdderComponent>;
+describe('CardContainerComponent', () => {
+  let component: CardPageComponent;
+  let fixture: ComponentFixture<CardPageComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LinkAdderComponent ]
+      declarations: [ CardPageComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LinkAdderComponent);
+    fixture = TestBed.createComponent(CardPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -1,21 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core'
+import { environment } from 'src/environments/environment';
 import {AngularFireModule} from '@angular/fire'
 import {AngularFireDatabaseModule} from '@angular/fire/database'
 import {AngularFireAuthModule} from '@angular/fire/auth'
-import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
+import { FontAwesomeModule, FaIconLibrary} from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { environment } from 'src/environments/environment';
-import { CardComponent } from './card/card.component';
-import { CardBodyComponent } from './card-body/card-body.component';
-import { CardFooterComponent } from './card-footer/card-footer.component';
-import { CardHeaderComponent } from './card-header/card-header.component';
+import { CardContainerComponent } from './card-page/card-container/card-container.component';
+import { CardBodyComponent } from './card-page/card-container/card-body/card-body.component';
+import { CardFooterComponent } from './card-page/card-container/card-footer/card-footer.component';
+import { CardHeaderComponent } from './card-page/card-container/card-header/card-header.component';
 import { CommentDialogComponent } from './comment-dialog/comment-dialog.component';
-import {SnackBarCommentComponent} from './card-footer/card-footer.component';
-import {SnackBarLinkComponent} from './link-adder/link-adder.component';
+import {SnackBarCommentComponent} from './card-page/card-container/card-footer/card-footer.component';
+import {SnackBarLinkComponent} from './link-saver/link-saver.component';
 import { SafeUrlPipe } from './safe-url.pipe';
-import { LinkAdderComponent } from './link-adder/link-adder.component';
+import { LinkSaverComponent } from './link-saver/link-saver.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
@@ -27,29 +27,37 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import{MatIconModule} from '@angular/material/icon';
-import Microlink from '@microlink/angular';
 import { NavbarComponent } from './navbar/navbar.component';
-import { CardContainerComponent } from './card-container/card-container.component';
-import { AboutContainerComponent } from './about-container/about-container.component';
+import { CardPageComponent } from './card-page/card-page.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import Microlink from '@microlink/angular';
+
+
+//FortAwesome Icons
+import {faTimes, faCommentAlt, faHeart } from "@fortawesome/free-solid-svg-icons";
+import {faEnvelope, faCommentAlt as faOutlineCommentAlt, faHeart as faOutlineHeart} from "@fortawesome/free-regular-svg-icons";
+import { faStackOverflow, faGithubAlt, faMedium } from '@fortawesome/free-brands-svg-icons';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent,
+    CardContainerComponent,
     CardBodyComponent,
     CardFooterComponent,
     CardHeaderComponent,
     SafeUrlPipe,
-    LinkAdderComponent,
+    LinkSaverComponent,
     CommentDialogComponent,
     SnackBarCommentComponent,
     SnackBarLinkComponent,
     NavbarComponent,
-    CardContainerComponent,
-    AboutContainerComponent
+    CardPageComponent,
+    AboutPageComponent
   ],
-  imports: [    
+  imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
@@ -73,4 +81,9 @@ import { AboutContainerComponent } from './about-container/about-container.compo
   bootstrap: [AppComponent],
   entryComponents: [CommentDialogComponent, SnackBarCommentComponent, SnackBarLinkComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+  constructor(private library: FaIconLibrary) {
+    library.addIcons(faTimes, faCommentAlt, faOutlineCommentAlt, faOutlineHeart, faHeart, faGithubAlt, faEnvelope);
+  }
+}

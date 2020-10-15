@@ -12,8 +12,8 @@ export class CommentDialogComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<CommentDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
-  ) { 
-    
+  ) {
+
   }
 
   ngOnInit() {

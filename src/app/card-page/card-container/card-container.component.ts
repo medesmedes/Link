@@ -1,17 +1,17 @@
-import { Component, OnInit } from "@angular/core";
-import { AngularFireDatabase } from "@angular/fire/database";
+import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from '@angular/fire/database';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: "app-card-container",
-  templateUrl: "./card-container.component.html",
-  styleUrls: ["./card-container.component.scss"]
+  selector: 'app-card-container',
+  templateUrl: './card-container.component.html',
+  styleUrls: ['./card-container.component.scss']
 })
 export class CardContainerComponent implements OnInit {
   links: any[];
   dbRef: any;
-  prodPath: string = "users/Re047I84rQfCzxRjeRWZ7PMs2wL2/links";
-  demoPath: string = "users/demobruger/links";
+  prodPath = 'users/Re047I84rQfCzxRjeRWZ7PMs2wL2/links';
+  demoPath = 'users/demobruger/links';
   constructor(db: AngularFireDatabase) {
     if (environment.isDemo) {
       this.dbRef = db.list(this.demoPath);
@@ -33,6 +33,7 @@ export class CardContainerComponent implements OnInit {
         .subscribe(links => {
           this.links = links;
           console.log(this.links);
+          // tslint:disable-next-line:max-line-length
           this.links.sort((a, b) => b.payload.val().favorite - a.payload.val().favorite || b.payload.val().timestamp - a.payload.val().timestamp);
         });
     }

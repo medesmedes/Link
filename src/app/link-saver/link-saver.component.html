@@ -4,7 +4,7 @@
         <mat-card-subtitle>This card replaces the Firefox Add-On for the sake of demonstration.</mat-card-subtitle>
         <form name="form" (ngSubmit)="linkForm.form.valid && onSubmit()" #linkForm="ngForm">
             <mat-form-field>
-                <mat-label color>Link</mat-label>
+                <mat-label>Link</mat-label>
                 <textarea matInput placeholder="Ex. A webpage you want to save..." name="link" class="form-control"
                     [(ngModel)]="model.link" #link="ngModel" required></textarea>
                 <mat-error *ngIf="linkForm.submitted && link.invalid && link.errors.required">

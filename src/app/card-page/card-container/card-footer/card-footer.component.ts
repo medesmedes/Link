@@ -42,7 +42,8 @@ export class CardFooterComponent implements OnInit {
 }
 
 @Component({
-  selector: "snack-bar-component",
-  templateUrl: "/snack-bar-comment/snack-bar-comment.html"
+  selector: 'app-snack-bar-component',
+  templateUrl: './snack-bar-comment/snack-bar-comment.html',
+  styleUrls: ['./snack-bar-comment/snack-bar-comment.scss']
 })
 export class SnackBarCommentComponent {}

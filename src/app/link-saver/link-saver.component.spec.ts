@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LinkSaverComponent } from './link-saver.component';
 
-describe('LinkAdderComponent', () => {
+describe('LinkSaverComponent', () => {
   let component: LinkSaverComponent;
   let fixture: ComponentFixture<LinkSaverComponent>;
 

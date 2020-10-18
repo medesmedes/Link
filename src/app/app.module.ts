@@ -79,7 +79,7 @@ import {faGithubAlt} from '@fortawesome/free-brands-svg-icons';
   bootstrap: [AppComponent],
   entryComponents: [CommentDialogComponent, SnackBarCommentComponent, SnackBarLinkComponent],
   // Bad practice with the Schema, but MicroLink no longer supports Angular and until I find an alternative and implement it, this will stay
-  schemas: [ NO_ERRORS_SCHEMA ]
+  // schemas: [ NO_ERRORS_SCHEMA ]
 
 })
 

@@ -18,7 +18,6 @@ export class CardBodyComponent implements OnInit {
   YouTubeGetID(url: string) {
     const urlArray = url.split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
     const embedUrl = 'https://www.youtube.com/embed/';
-    console.log(urlArray);
     return embedUrl + urlArray[2].substring(0, 11);
   }
 }

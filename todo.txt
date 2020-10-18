@@ -1,9 +1,4 @@
-finish nav bar
-- change color theme?
-
-make about page
-look into angular routing
-	
+lav mobil-layout med single row og en navbar der ikke får en hjerneblødning
 
 make chrome interface?
 - login

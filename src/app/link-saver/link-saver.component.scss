@@ -1,10 +1,37 @@
 .link-saver {
-  margin: 0 auto;
-  width: 16vw;
-  min-width: 297px;
-  margin-bottom: 10px;
+  margin: 0 auto 2rem;
 }
 
 .mat-form-field {
   width: 100%;
+}
+
+@media only screen and (min-width: 0px) {
+  .link-saver{
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  .link-saver{
+    width: 34vw;
+  }
+}
+
+@media only screen and (min-width: 1365px) {
+  .link-saver{
+    width: 22vw;
+  }
+}
+
+@media only screen and (min-width: 1599px) {
+  .link-saver{
+    width: 23vw;
+  }
+}
+
+@media only screen and (min-width: 1919px) {
+  .link-saver{
+    width: 17vw;
+  }
 }

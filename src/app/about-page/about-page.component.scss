@@ -1,7 +1,5 @@
 .about-page{
-  margin: 32px 192px;
-  font-family: Roboto,"Helvetica Neue",sans-serif;
-
+  margin: 2rem 12rem;
 }
 
 h1{
@@ -10,12 +8,12 @@ h1{
 }
 
 .external-link{
-  font-size: 24px;
+  font-size: 1.5rem;
   text-decoration: none;
 }
 
 .fa-icon-indent{
-  margin-right: 8px;
+  margin-right: 0.5rem;
   color: #6c7bad;
 }
 
@@ -26,4 +24,10 @@ a{
 
 a:hover{
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 650px) {
+  .about-page{
+    margin: 2rem 6rem;
+  }
 }

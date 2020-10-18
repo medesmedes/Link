@@ -1,29 +1,24 @@
 .navbar {
-  height: 70px;
-  width: 100%;
+  width: 100vw;
   background-color: #6c7bad;
-  padding-top: 0px;
-  margin-bottom: 32px;
-  box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(108, 123, 173, 0.46);
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(108, 123, 173, 0.46);
 }
 
 ul {
-  margin: 0px;
   list-style-type: none;
   display: flex;
   overflow: hidden;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin: 0 20%;
 }
 
 li {
   border-radius: 3px;
-  line-height: 45px;
+  line-height: 3rem;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
-  height: 50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .active {
@@ -32,25 +27,29 @@ li {
 
 li a {
   font-weight: 400;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-transform: uppercase;
   border-radius: 3px;
   text-decoration: none;
   color: white;
 }
-
 .navbar-brand {
+  line-height: 3.4rem;
   font-size: 1.125rem;
   color: white;
   font-weight: 300;
-  margin-right: 10px;
-  height: 50px;
-  line-height: 50px;
+  margin-right: 0.75rem;
   padding: 0.625rem 0;
   display: inline-block;
 }
 
 .brand-image {
   vertical-align: middle;
-  margin-right: 5px;
+  margin-right: 0.3rem;
+}
+
+@media only screen and (max-width: 468px) {
+  ul {
+    margin: 0;
+  }
 }

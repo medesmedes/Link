@@ -1,15 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 //@Overwrite - Makes the snack-bar small and the text centered
-.mat-snack-bar-container{ 
-    min-width: 0px !important;
+
+*{
+  font-family: Roboto, sans-serif;
+}
+
+.mat-snack-bar-container{
+    min-width: 0 !important;
     text-align: center !important;
     color: #F9F9F9;
 }
 
 body{
     background-color: #F9F9F9;
-    margin: 0px;
+    margin: 0;
 }
 
 .mat-form-field.mat-focused .mat-form-field-label{
@@ -27,3 +32,5 @@ body{
 .mat-form-field.mat-form-field-invalid .mat-form-field-ripple{
     background-color:#f44336;
 }
+
+

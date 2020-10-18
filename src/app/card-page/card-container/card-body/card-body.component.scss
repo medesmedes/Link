@@ -1,7 +1,6 @@
 .mat-card-image{
     margin: 0;
     width:100%;
-    height:30vh;
     object-fit:cover  ;
     object-position: 50% 50%; /* default value: image is centered*/
     border-width: 1px;
@@ -13,26 +12,19 @@
 .youtube{
     margin: 0;
     width:100%;
-    height:30vh;
     border-width: 1px;
     border-style: solid;
     border-color: #e1e8ed;
 }
 
-.text-container{
-    width:100%;
-    height:30vh;
-    border-width: 1px;
-    border-style: solid;
-    border-color: #e1e8ed;   
-    overflow: hidden;
-    text-overflow: ellipsis;
-
+.text-container {
+  width: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e1e8ed;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-
-:host::ng-deep .microlink_card {
-    height: 30vh;
-  }
 
 .text-content{
     padding: 14px;
@@ -40,5 +32,113 @@
 }
 
 .mat-card-content{
-    margin-bottom: 0px;
-}   
+    margin-bottom: 0;
+}
+
+@media only screen and (min-width: 0px) {
+  .mat-card-image {
+    height:30vh;
+  }
+
+  .youtube{
+    height:30vh;
+  }
+
+  .text-container{
+    height:30vh;
+  }
+
+  :host::ng-deep .microlink_card {
+    height:30vh;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .mat-card-image {
+    height:50vh;
+  }
+
+  .youtube{
+    height:50vh;
+  }
+
+  .text-container{
+    height:50vh;
+  }
+
+  :host::ng-deep .microlink_card {
+    height:50vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .mat-card-image {
+    height:34vh;
+  }
+
+  .youtube{
+    height:34vh;
+  }
+
+  .text-container{
+    height:34vh;
+  }
+
+  :host::ng-deep .microlink_card {
+    height:34vh;
+  }
+}
+
+@media only screen and (min-width: 1365px) {
+  .mat-card-image {
+    height:34vh;
+  }
+
+  .youtube{
+    height:34vh;
+  }
+
+  .text-container{
+    height:34vh;
+  }
+
+  :host::ng-deep .microlink_card {
+    height:34vh;
+  }
+}
+
+@media only screen and (min-width: 1599px) {
+  .mat-card-image {
+    height:35vh;
+  }
+
+  .youtube{
+    height:35vh;
+  }
+
+  .text-container{
+    height:35vh;
+  }
+
+  :host::ng-deep .microlink_card {
+    height:35vh;
+  }
+}
+
+@media only screen and (min-width: 1919px) {
+  .mat-card-image {
+    height:30vh;
+  }
+
+  .youtube{
+    height:30vh;
+  }
+
+  .text-container{
+    height:30vh;
+  }
+
+  :host::ng-deep .microlink_card {
+    height:30vh;
+  }
+}

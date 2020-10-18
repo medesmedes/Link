@@ -32,7 +32,6 @@ export class CardContainerComponent implements OnInit {
         .snapshotChanges()
         .subscribe(links => {
           this.links = links;
-          console.log(this.links);
           // tslint:disable-next-line:max-line-length
           this.links.sort((a, b) => b.payload.val().favorite - a.payload.val().favorite || b.payload.val().timestamp - a.payload.val().timestamp);
         });

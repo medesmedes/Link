@@ -80,8 +80,7 @@ export class LinkSaverComponent implements AfterViewInit {
 
 @Component({
   selector: 'app-snack-bar-link',
-  templateUrl: './snack-bar-link/snack-bar-link.html',
-  styleUrls: ['./snack-bar-link/snack-bar-link.scss']
+  templateUrl: './snack-bar-link/snack-bar-link.html'
 })
 export class SnackBarLinkComponent {}
 
